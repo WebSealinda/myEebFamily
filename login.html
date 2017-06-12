@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="shortcut icon" href="logo.ico" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="js/jquery-1.6.4.js"></script>
+	</head>
+
+	<body>
+		<div id="Layer1">
+			<!--<img src="img/login.png" height= "100%" width="100%" style="background-attachment:fixed"/>-->
+		</div>
+		<div class="contaner">
+			<div class="form-top">
+				<div class="form-top-comm">
+					<a href="register.html"><input type="button" value="注册" id="btnRegister"></a>
+				</div>
+				<div class="form-top-comm" >
+					<a href="login.html" ><input type="button" value="登录" id="btnLogin" class="active"></a>
+				</div>
+			</div>
+
+			<!--S  login-->
+			<form id="formlogin" method="post" onsubmit="return false;">
+				<div class="form-username">
+					<input type="text" id="loginname" name="username" autocomplete="off" placeholder="用户名" />
+				</div>
+				<script type="text/javascript">
+					setTimeout(function() {
+						if(!$("#loginname").val()) {
+							$("#loginname").get(0).focus();
+						}
+					}, 0);
+				</script>
+				<div class="form-pwd">
+					<input type="password" id="nloginpwd" name="password" autocomplete="off" placeholder="密码" />
+				</div>
+				<div class="test">
+					<div class="test-ipt">
+						<input type="text" placeholder="请输入验证码" />
+					</div>
+					<div id='loginImg' onclick="show()">
+						<a href="#"></a>
+					</div>
+				</div>
+				<div class="form-submit">
+					<div class="form-btn-login">
+						<input type="button" id="loginsubmit" value="登录辣一家" />
+					</div>
+				</div>
+			</form>
+			<!--E  login-->
+		</div>
+	</body>
+
+</html>

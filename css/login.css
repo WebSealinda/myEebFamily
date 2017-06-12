@@ -1,0 +1,367 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+    font-size:52.5%; /* 10÷16=62.5% */
+}
+body{
+    font-size:16px;
+    font-size:1.6rem ; /* 12÷10=1.2 */
+}
+.active {
+	color: #bd1616;
+}
+#Layer1 {
+	position:absolute; 
+	width:100%; 
+	height:100%; 
+	z-index:-1;
+	background-image: url(../img/login.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.contaner{
+	position: relative;
+	float: right;
+	box-sizing: content-box;
+	width: 30%;
+    height: 70%;
+    margin: 0 auto;
+    margin-top: 28%;
+    margin-right: 14%;
+	
+}
+.form-login {
+	width: 374;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+}
+.form-top {
+	margin: 0 auto;
+	text-align: center;
+	
+}
+.form-top #btnRegister,.form-top #btnLogin {
+	display: inline-block;
+	background: none;
+	border: none;
+	list-style: none;
+	text-align: center;
+	background: none;
+	font: 30px "宋体";
+	font-weight: 900;
+	margin: 20px;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 40px;
+	box-sizing: content-box;
+	border-bottom: 0.19rem solid #000000;
+	
+	
+}
+#btnRegister:hover,#btnLogin:hover{
+	cursor: pointer;
+}
+
+.form-username,.form-phone,.form-pwd ,.test{
+	border:none;
+	margin: 0 auto;
+	/*outline: none;*/
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 56px;
+	
+	
+}
+.form-username input,.form-phone input,.form-pwd input{
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #bd1616;
+	background: none;
+	height: 56px;
+	line-height: 56px;
+	width: 100%;
+	font-weight: 850;
+	font: 20px/2em "宋体";
+	padding-left: 25px;
+	letter-spacing: 4px;
+	text-align:start;
+}
+.test {
+	padding-top: 18px;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.test-ipt input{
+	height: 30px;
+	width:65%;
+	line-height: 30px;
+	border-radius: 4px;
+	border: 1px solid #bd1616;
+	padding-left: 10px;
+	outline: none;
+	font-size: 14px;
+	letter-spacing: 2px;
+	vertical-align: auto;
+	display: inline-block;
+}
+#loginImg {
+	width: 35%;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+	background-color: #EEEFEF;
+	text-align: center;
+	color: #555555;
+	margin-left: 10px;
+	font-size: 21px;
+	letter-spacing: 0.2rem;
+
+}
+
+.form-submit,.form-btn-register ,.form-btn-login {
+	width: 250px;
+	height: 48px;
+	border-radius: 12px;
+	background: #cb5353;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 48px;
+	position: absolute;
+	vertical-align: middle;
+
+}
+.form-top-comm {
+	margin: 15px;
+	display: inline-block;
+	outline: none;
+	
+}
+.form-btn-register input,.form-btn-login input{
+    outline: none;
+	border: none;
+	background: none;
+	font: 18px "宋体";
+	color: #eeefef;
+	text-align: center;
+	vertical-align: middle;
+}
+#btnRegister:focus,#btnLogin:focus {
+	outline: none;
+}
+.form-btn-register input:hover,.form-btn-login input:hover {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background: none;
+	
+}
+
+@media screen and (min-width:1200px){
+		.contaner{
+		width: 24%;
+        height: 50%;
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-right: 15%;
+        }
+        .form-top #btnRegister,.form-top #btnLogin {
+        	font-size: 1.7rem;
+        }
+        .form-username input,.form-phone input,.form-pwd input{
+        	border-bottom: 0.12rem solid #bd1616;
+        	font-size: 1.2rem;
+        	font-weight: bolder;
+        	}
+        #btn-submit-login  {
+        	font-size: 1.1rem;
+        	font-weight:bolder;
+        	
+        } 
+        .test-ipt input {
+        	border: 0.2rem solid #bd1616;
+        	border-radius: 0.6rem;
+        }
+        html {
+        	font-size: 120%;
+        }
+}
+@media screen and (min-width: 960px) and (max-width: 1199px){
+		.contaner{
+		width: 27%;
+        height: 50%;
+        margin: 0 auto;
+        margin-top: 17%;
+        margin-right: 13%;
+        }
+        .form-top #btnRegister,.form-top #btnLogin {
+        	font-size: 1.6rem;
+        }
+        .form-username input,.form-phone input,.form-pwd input{
+        	border-bottom: 0.12rem solid #bd1616;
+        	font-size: 1.2rem;
+        	font-weight: bold;
+        	}
+        #btn-submit-login ,#btn-submit-register {
+        	font-size: 1.0rem;
+        	font-weight:bolder;
+        	
+        } 
+        .test-ipt input {
+        	border: 0.2rem solid #bd1616;
+        	border-radius: 0.6rem;
+        }        
+        html {
+        	font-size: 110%;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+		.contaner{
+		width: 38%;
+        height: 50%;
+        margin: 0 auto;
+        margin-top: 19%;
+        margin-right: 7%;
+        }
+        .form-top #btnRegister,.form-top #btnLogin {
+        	font-size: 1.7rem;
+        }
+        .form-username input,.form-phone input,.form-pwd input{
+        	border-bottom: 0.12rem solid #bd1616;
+        	font-size: 1.2rem;
+        	font-weight: bolder;
+        	}
+        #btn-submit-login ,#btn-submit-register {
+        	font-size: 1.1rem;
+        	font-weight:bolder;
+        	
+        } 
+        .test-ipt input {
+        	border: 0.2rem solid #bd1616;
+        	border-radius: 0.6rem;
+        }        
+        html {
+        	font-size: 100%;
+        }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	#Layer1 {
+	position:absolute; 
+	width:100%; 
+	height:100%; 
+	z-index:-1;
+	background-image: url(../img/logintwo.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+		.contaner{
+		width: 54%;
+        height: 50%;
+        margin: 0 auto;
+        margin-top: 25%;
+        margin-right: 25%;
+        }
+        .form-top #btnRegister,.form-top #btnLogin {
+        	font-size: 1.5rem;
+        }
+        .form-username input,.form-phone input,.form-pwd input{
+        	border-bottom: 0.14rem solid #bd1616;
+        	font-size: 1.0rem;
+        	font-weight: bolder;
+        	}
+        #btn-submit-login ,#btn-submit-register {
+        	font-size: 1.1rem;
+        	font-weight:bolder;
+        	
+        } 
+        .test-ipt input {
+        	border: 0.2rem solid #bd1616;
+        	border-radius: 0.6rem;
+        }         
+        html {
+        	font-size: 100%;
+        }	
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+	#Layer1 {
+	position:absolute; 
+	width:100%; 
+	height:100%; 
+	z-index:-1;
+	background-image: url(../img/logintwo.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+		.contaner{
+		width: 74%;
+        height: 50%;
+        margin: 0 auto;
+        margin-top: 40%;
+        margin-right: 20%;
+        }
+        .form-top #btnRegister,.form-top #btnLogin {
+        	font-size: 1.5rem;
+        }
+        .form-username input,.form-phone input,.form-pwd input{
+        	border-bottom: 0.14rem solid #bd1616;
+        	font-size: 1.0rem;
+        	font-weight: bolder;
+        	}
+        #btn-submit-login ,#btn-submit-register {
+        	font-size: 1.1rem;
+        	font-weight:bolder;
+        	
+        } 
+        .test-ipt input {
+        	border: 0.2rem solid #bd1616;
+        	border-radius: 0.6rem;
+        }         
+        html {
+        	font-size: 100%;
+        }	
+}
+@media only screen and (max-width: 320px) {
+	#Layer1 {
+	position:absolute; 
+	width:100%; 
+	height:100%; 
+	z-index:-1;
+	background-image: url(../img/logintwo.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+		.contaner{
+		width: 90%;
+        height: 50%;
+        margin: 0 auto;
+        margin-top: 49%;
+        margin-right: 17%;
+        }
+        .form-top #btnRegister,.form-top #btnLogin {
+        	font-size: 1.5rem;
+        }
+        .form-username input,.form-phone input,.form-pwd input{
+        	border-bottom: 0.14rem solid #bd1616;
+        	font-size: 1.0rem;
+        	font-weight: bolder;
+        	}
+        #btn-submit-login ,#btn-submit-register {
+        	font-size: 1.1rem;
+        	font-weight:bolder;
+        	
+        } 
+        .test-ipt input {
+        	border: 0.2rem solid #bd1616;
+        	border-radius: 0.6rem;
+        }         
+        html {
+        	font-size: 90%;
+        }		
+}

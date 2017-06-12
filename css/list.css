@@ -1,0 +1,459 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f4f0ea;
+	font-family:"宋体";
+	margin-bottom: 50px;
+}
+.body {
+	background-color: #f4f0ea;
+	margin-bottom: 50px;
+}
+.head-top {
+	height: 32px;
+	width: 100%;
+	position: absolute;
+	background-color: #000000;
+}
+.nav {
+	float: right;
+	height: 32px;
+	position: relative;
+	margin-right: 125px;
+	line-height: 32px;
+	
+}
+.nav a {
+	color: #b0a9a9;
+	font-size: 16px;
+	font-weight: bold;
+}
+ a {
+	text-decoration: none;
+}
+.nav ul,.nav li,.nav a {
+	display: inline-block;
+}
+.nav ul li a{
+	color: #e0d6d6;
+	padding-right: 15px;
+}
+.center {
+	width: 1090px;
+	padding-top: 50px;
+	background-color:#ffffff;
+	margin: 0 auto;
+}
+.head-bottom{
+	height: 82px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+}
+.logo {
+	justify-content: flex-end;
+}
+.logo a {
+	background: url(../img/logo.png) no-repeat;
+	width: 256px;
+	height: 80px;
+	display: inline-block;
+	margin-left: 17px;
+}
+.search a{
+	display: inline-block;
+	background: url(../img/search3.png) no-repeat;
+	height: 38px;
+	width: 88px;
+	float: right;
+}
+.search  {
+	margin-left: 66px;
+	width:430px ;
+	height:38px;
+	border: 2px solid #bd1616;
+	box-sizing: content-box;
+	display: inline-block;
+	box-sizing: content-box;
+}
+.search input {
+	border: none;
+	height:38px;
+	width: 330px;
+	border-right: 2px solid #bd1616;
+	outline: none; 
+	font-size: 18px;
+	font-weight: 700;
+	padding-left: 10px;
+}
+.shop-cart a {
+	display: inline-block;
+	background: url(../img/shopcart.png) no-repeat;
+	height: 44px;
+	width: 90px;
+	margin-left:100px ;
+
+}
+.shop-nav {
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	margin-top: 28px;
+	
+}
+
+.shop-nav ul, .shop-nav li ,.shop-nav a {
+	display: inline-block;
+}
+.shop-nav a {
+	font-size: 27px;
+	color: #bd1616;
+	font-weight: bolder;
+}
+
+.shop-nav-second {
+	margin-top: -10px;
+	display: flex;
+	flex-direction: row;
+	height: 34px;
+	width: 800px;
+	text-align: center;
+	margin: 0 auto;
+	padding-left: 70px;
+	display: none;
+	margin-bottom: 10px;
+	
+}
+.shop-nav-second .shop-food {
+	padding-left: 40px;
+}
+.shop-nav-second img {
+	width: 32px;
+	height: 30px;
+	padding-right:4px;
+}
+.shop-nav-second a {
+	color: #bd1616;
+	font-size: 16px;
+	font-weight:bold;
+}
+.shop-nav-second a:hover {
+	text-decoration: none;
+	color: #2B2B2B;
+	border-bottom: 3px solid #000000;
+}
+.shop-nav-other a {
+	padding-left: 75px;.shop-nav a
+}
+.shop-nav-all a {
+	border-bottom: 3px solid #BD1616;
+	padding-bottom: 0;
+	height: 11px;
+	line-height:0;
+}
+.centent-center {
+	width: 1036px;
+	margin: 0 auto;
+}
+.content {
+	width: 1036px;
+	height: 212px;
+	border-top: 3px solid #bd1616;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.content-top {
+	height: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	
+}
+.content-top  i {
+	color: #c0c0c0;
+	font-size: 18px;
+}
+.content-top span {
+	color: #646464;
+	font-size: 17px;
+	padding-left: 12px;
+	line-height: 25px;
+	font-weight: 700;
+}
+.content-top-search {
+	width: 125px;
+	height: 25px;
+	border: 1px solid #eaeaea;
+	margin-left: 20px;
+}
+.content-top-search  button {
+	background: none;
+	border: none;
+	outline: none;
+	width: 30px;
+	height: 24px;
+	box-sizing: content-box;
+	background: url(../img/searchwhite.png)no-repeat;
+	cursor: pointer;
+	float: right;
+	line-height: 24px;
+}
+.content-main {
+	width: 1036px;
+	height: 122px;
+	background-color: #f7f7f7;
+	margin: 0 auto;
+}
+.content-main span {
+	color: #8e8e8e;
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 80px;
+}
+.content-main-top-brand {
+	border-bottom: 1px solid  #c7cac4;
+}
+.content-main-top,.content-main-buttom {
+	padding-top: 13px;
+	height: 61px;
+}
+.content-main-top,.content-main-buttom ,.content-main-top-brand,.content-main-top-taste{
+	display: flex;
+	
+}
+.content-main-top-brand img{
+	padding-right: 40px;
+}
+.content-main-top-taste ul, .content-main-top-taste li {
+	display: inline-block;
+	
+}
+.content-main-top-taste a {
+	font-size: 19px;
+	font-weight: 800;
+	padding-right: 15px;
+}
+.content-main-top-taste a:hover,.content-main-top-taste a:focus {
+	color: #ff4848;
+	
+}
+.prudlist-link:hover {
+	text-decoration: none;
+}
+.prudlist-top ul ,.prudlist-top li ,.prudlist-top a{
+	display: inline-block;
+	color: #333;
+	font-size: 19px;
+	box-sizing:initial;
+}
+.prudlist-main-one {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.prudlist-top a:hover {
+	text-decoration: none;
+}
+.prudlist-top-order:hover {
+	cursor: pointer;
+	background-color: #bd1616;
+	
+}
+.prudlist-top-order:focus {
+	color:#FFFFFF;
+	background-color: #bd1616;
+}
+.prudlist-top-order:nth-child(1){
+	width: 100px;
+	height: 38px;
+	border: 1px solid #EAEAEA;
+	text-align: center;
+	line-height: 38px;
+}
+.prudlist-top-order {
+	width: 78px;
+	height: 38px;
+	border: 1px solid #EAEAEA;
+	text-align: center;
+	line-height: 38px;
+}
+.prudlist-main-food:hover {
+	border: 3px solid #c43030;
+	box-shadow:  0px 0px 10px red;
+}
+.prudlist-main-food {
+	width: 240px;
+	height: 388px;
+	
+	position: relative;
+	border-radius: 8px;
+	margin-right: 20px;
+}
+.prudlist-main p {
+	color: #acacac;
+	font-size: 14px;
+	padding-top: 10px;
+	font-weight: 700;
+}
+.prudlist-main-food-price {
+	color: #e4393c;
+	float: right;
+	font-size: 25px;
+	font-weight: bolder;
+	margin-right: 10%;	
+}
+
+.prudlist-food-img{
+	width: 218px;
+	height: 190px;
+	padding: 10px;
+}
+.prudlist-car-img {
+	width: 50px;
+	height: 50px;
+	margin-left: 50px;
+	cursor: pointer;
+}
+.prudlist-car {
+	position: relative;
+	z-index: 1000;
+}
+.prudlist-cartwo {
+	position: relative;
+	margin-left: 50px;
+	display: none;
+}
+.prudlist-main-bottom {
+	display: flex;
+	flex-direction: row;
+	top: 10%;
+	margin-top: 25%;
+}
+.prudlist-main-page {
+	width: 35px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid  #eeeeee;
+	text-align: center;
+	margin-left: 50px;
+}
+.prudlist-main-page-btn {
+	width: 14px;
+	height: 28px;
+	border: 1px solid #eeeeee;
+	display: flex;
+	flex-direction: column;
+}
+.prudlist-main-page-bor {
+	width: 14px;
+	height: 14px;	
+	padding: 1px;
+	text-align: center;
+	vertical-align: middle;
+}
+.prudlist-main-page-pre {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid  #ff0000;
+	
+}
+.prudlist-foot {
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin: 0 auto;
+	
+}
+.prudlist-foot a:hover {
+	text-decoration: none;
+}
+.prudlist-foot ul,.prudlist-foot li {
+	display: inline-block
+}
+.prudlist-foot-pre,.prudlist-foot-next {
+	width: 60px;
+	height: 30px;
+	border: 1px solid  #eeeeee;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.prudlist-foot-nowOne {
+	margin-left: 30px;
+}
+.prudlist-foot-nowTwo  {
+	margin-right: 30px;
+}
+.prudlist-foot-nowOne ,.prudlist-foot-nowTwo {
+	width: 38px;
+	height: 38px;
+	border: 1px solid  #eeeeee;
+	text-align: center;
+	line-height: 38px;
+	cursor: pointer;
+}
+.prudlist-foot-nowOne:hover ,.prudlist-foot-nowTwo:hover,.prudlist-foot-pre:hover,.prudlist-foot-next:hover {
+	background-color: #fa5c6b;
+	color: #FFFFFF;	
+}
+.prudlist-foot-nowOne:focus ,.prudlist-foot-nowTwo:focus,.prudlist-foot-pre:focus,.prudlist-foot-next:focus {
+	background-color: #fa5c6b;
+	color: #FFFFFF;
+}
+hr {
+	color: #eeeeee ;
+}
+.prudlist-main-next {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid  #eeeeee;
+}
+.foot {
+	height: 204px;
+	width: 100%;
+	background-color: #000000;
+}
+.foot-top a,.foot-bottom a,.foot-bottom-addre{
+	color: #e0d6d6;
+	font-size: 15px;
+	font-weight: 500px;
+	
+}
+
+.foot-top ul,.foot-top li,.foot-top  a ,.foot-bottom ul,.foot-bottom li,.foot-bottom  a{
+	display: inline-block;
+}
+.foot-top  a {
+	padding-left: 130px;
+}
+.foot-bottom {
+	border-top: 1px solid #615c5c ;
+	width: 360px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.foot-top  {
+	padding-bottom: 20px;
+}
+.foot-top ,.foot-bottom ,.foot-bottom-addre{
+	margin: 0 auto;	
+	text-align: center;
+}
+.foot-top img {
+	padding-top: 20px;
+}

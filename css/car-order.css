@@ -1,0 +1,532 @@
+* {
+	margin:0;
+	padding: 0;
+	background-color: #f4f0ea;
+	/*font-family: "Microsoft YaHei","Hiragino Sans GB";*/
+	font-family: "宋体";
+}
+.clear{clear: both;}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	font-weight: bold;
+}
+
+.top {
+	background-color: black;
+	width: 100%;
+	height: 31px;
+}
+
+.topMid {
+	text-align: right;
+	width: 1090px;
+	color: #d4cccc;
+	margin:auto;
+	background-color: black;
+}
+.topMid span {
+	display: block;
+	background-color: black;
+	padding-top: 6px;
+}
+.topMid a {
+	background-color:black;
+	text-decoration: none;
+	margin-left: 3px;
+	margin-right: 3px;
+	color: #D4CCCC;
+}
+header{
+	width: 1090px;
+	height: 100px;
+	margin: auto;
+	border: 1px solid black;
+}
+.logo {
+	
+	/*padding-left: 25px;*/
+	/*padding-top: 25px;*/
+	/*height: 73px;*/
+	/*width: 230px;*/
+	margin-top: 10px;
+	float: left;
+	background: url(../img/logo.png) no-repeat;
+	width: 256px;
+	height: 80px;
+	display: inline-block;
+	line-height: 80px;
+	box-sizing: border-box;
+	/*border: 1px solid black;*/
+}
+.headerTitle {
+	float: left;
+/*	height: 100px;*/
+	margin-top: 30px;
+	padding-left: 35px;
+	font-size: 24px;
+	font-weight: bold;
+	
+}
+.search {
+	float: right;
+	width: 250px;
+	height: 25px;
+	margin-top: 40px;
+	margin-right: 20px;
+	border: 1px solid #BD1616;
+}
+input:focus {
+	outline: none;
+}
+.ipt-search {
+	border: 0 none;
+	height: 19px;
+	/*width:195px;*/
+	width: 75%;
+	padding-bottom: 1px;
+	padding-left: 5px;
+}
+.btn-search {
+	display: inline-block;
+	float: right;
+	/*width: 50px;*/
+	width:20%;
+	height: 25px;
+	background-image: url(../img/btn-bg-search.png);
+	border-left: 1px solid #BD1616;
+}
+.btn-search:hover {
+	cursor: pointer;
+}
+section{
+	width: 1090px;
+	margin: 60px auto 150px;
+	/*border: 1px solid black;*/
+}
+.th {
+	width: 1090px;
+	height: 35px;
+	border: 2px solid #bd1616;
+	font-size: 18px;
+
+}
+.th .all {
+	float: left;
+	margin-top: 11px;
+	margin-left: 15px;
+	margin-right: 15px;
+	
+}
+.th .allchose {
+	display: inline-block;
+	width: 125px;
+	float: left;
+	padding-top: 5px;
+    padding-left: 25px;
+}
+
+.message {
+	display: inline-block;
+	width: 260px;
+	float: left;
+	padding-top:5px;
+
+}
+
+.unitCost {
+	display: inline-block;
+	width: 150px;
+	float: left;
+	padding-top: 5px;
+	text-align: center;
+}
+.number {
+	display: inline-block;
+	width: 177px;
+	float: left;
+	padding-top: 5px;
+	text-align: center;
+
+}
+.cost {
+	display: inline-block;
+    width:150px;
+    float: left;
+    padding-top: 5px;
+    text-align: center;
+
+}
+.control {
+	display: inline-block;
+	float: left;
+	width: 160px;
+    padding-top: 5px;
+    text-align: center;
+}
+.list {
+	width: 1090px;
+	margin: 35px auto 35px;
+	border: 2px solid #bd1616;
+	
+}
+.listDetail {
+	/*position: relative;*/
+	height: 150px;
+	width: 1090px;
+	
+}
+.cekbox {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	padding-left: 15px;
+	padding-top: 69px;
+}
+/*.lyjcheckbox {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	
+	padding-top: 69px;
+	padding-left:15px ;
+}*/
+
+.detail {
+	display: inline-block;
+	float: left;
+	height: 149px;
+	width:1047px;
+	border-bottom: 1px solid #d88380;
+}
+
+.img {
+	width: 100px;
+	height: 100px;
+	margin:25px;
+	float: left;
+	background-image: url(../img/food-demo.png);
+}
+/*.img a{
+	display: block;
+	width: 100px;
+	height: 100px;
+	background:  url(../img/food-demo.png);
+}*/
+.msg {
+	width: 260px;
+	float: left;
+	padding-top: 25px;
+}
+.uc {
+	width: 150px;
+	float: left;
+	text-align: center;
+	padding-top: 63px;
+}
+.num {
+	width: 177px;
+	float: left;
+	text-align: center;
+	padding-top: 63px;
+}
+.allcost {
+	width: 150px;
+	float: left;
+	text-align: center;
+	padding-top: 63px;
+}
+.ctrl {
+	width:160px;
+	float:left;
+	text-align: center;
+	padding-top: 50px;
+	line-height: 30px;
+}
+
+.final {
+	width: 1090;
+	height: 50px;
+	border: 2px solid #BD1616;
+}
+.final .all{
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 18px;
+	
+}
+.final .allchose {
+	display: inline-block;
+	float: left;
+	width: 50px;
+	margin-top: 13px;
+}
+.final .del {
+	display: inline-block;
+	float: left;
+	margin-top: 13px;
+}
+.final .total {
+	display: inline-block;
+	margin-top: 10px;
+	float: left;
+	margin-left: 30%;
+	/*margin-right: 50px;*/
+}
+.final .total #total-thing {
+	color: red;
+	font-size: 18px;
+}
+.final .total #total-money {
+	color: red;
+	font-size: 24px;
+}
+.final .subm {
+	display: inline-block;
+	width: 130px;
+	height: 43px;
+	font-size: 26px;
+	background-color: #BD1616;
+	float: right;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 7px;
+	text-shadow: 2px 2px 2px #888;
+}
+.subm:hover {
+	cursor: pointer;
+}
+footer {
+	background-color: black;
+	/*height: 200px;*/
+}
+.fTop {
+	background-color: black;
+	width: 1090px;
+	height: 130px;
+	margin: 0px auto;
+}
+.fLeft {
+	background-color:black ;
+	width: 363px;
+	float: left;
+	color: #D4CCCC;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 25px;
+	line-height: 40px;
+}
+.fMid {
+	background-color:black ;
+	float: left;
+	width: 364px;
+	text-align: center;
+}
+.fMid a {
+	display: block;
+	width: 200px;
+	height: 80px;
+	margin: 25px auto auto auto;
+}
+.fRight {
+	background-color: black;
+	width: 363px;
+	float: left;
+	color: #D4CCCC;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 25px;
+	line-height: 40px;
+}
+.fBottom {
+	background-color: black;
+	/*width: 400px;*/
+	width: 40%;
+	margin: auto;
+	color: #D4CCCC;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	border-top: 1px solid #D4CCCC;
+}
+
+.fBottom a {
+	background-color: black;
+	color: #D4CCCC;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/*order页面*/
+
+.back {
+	display: inline-block;
+	margin-top: 38px;
+	font-size: 16px;
+}
+
+nav {
+	/*display: inline-block;*/
+	width: 1090px;
+	margin: 50px auto;
+	font-size: 20px;
+	font-weight: bold;
+}
+nav ul li {
+	display: inline-block;
+}
+nav a {
+	display: inline-block;
+	color: #BD1616;
+	margin-right: 8px;
+}
+
+.hover {
+	border-bottom: 3px solid #BD1616;
+}
+
+/*th*/
+.goods {
+	display: inline-block;
+	width: 38%;
+	padding-left: 25px;
+	padding-top: 7px;
+}
+.people {
+	display: inline-block;
+	width: 14%;
+	text-align: center;
+	padding-top: 7px;
+}
+.order-unitCost {
+	display: inline-block;
+	width: 14%;
+	text-align: center;
+	padding-top: 7px;
+}
+.order-number {
+	display: inline-block;
+	width: 12%;
+	text-align: center;
+	padding-top: 7px;
+}
+.order-control {
+	display: inline-block;
+	width: 14%;
+	text-align: center;
+	padding-top: 7px;
+	
+}
+
+/*main*/
+.goods-allMsg {
+	width: 1090px;
+	border:2px solid #BD1616;
+	margin-top: 30px;
+}
+.thing {
+	display: inline-block;
+	width: 40%;
+	border-right: 1px solid #ed7272;
+}
+.dtl-thing {
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #ED7272;
+}
+#lastThing1 ,#lastThing2 {
+	border: none;
+}
+
+#people {
+	display: inline-block;
+	width: 14%;
+	text-align: center;
+	/*border-right: 1px solid #ED7272;*/
+}
+
+
+.order-cost {
+	display: inline-block;
+	width: 14%;
+	border-right: 1px solid #ED7272;
+	border-left: 1px solid #ED7272;
+}
+.dtl-cost {
+	float: left;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	border-bottom: 1px solid #ED7272;
+	
+}
+#lastCost1 ,#lastCost2 {
+	border-bottom: none;
+}
+
+.order-num {
+	display: inline-block;
+	width: 13%;
+	border-right: 1px solid #ED7272;
+}
+.dtl-mun {
+	float: left;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	border-bottom: 1px solid #ED7272;
+}
+#lastNum1 ,#lastNum2 {
+	border-bottom: none;
+}
+
+.order-ctrl {
+	display: inline-block;
+	width: 14%;
+}
+
+.order-ctrl a {
+	display: block;
+	margin-left: 26%;
+	text-align: center;
+}
+
+.order-total {
+	width: 1090px;
+	height: 35px;
+	border-left:2px solid #BD1616 ;
+	border-right: 2px solid #BD1616;
+	border-bottom: 2px solid #BD1616;
+}
+.No {
+	display: inline-block;
+	float: left;
+	margin-top: 8px;
+	margin-left: 3%;
+}
+.money {
+	display: inline-block;
+	float: right;
+	margin-top: 5px;
+	margin-right: 4%;
+}
+.money span {
+	color: #BD1616;
+	font-size: 22px;
+}
+
+#main1 ,#main2 ,#main3 ,#main4 {
+	display: none;
+}

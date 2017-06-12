@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta  name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>car</title>
+		<link rel="shortcut icon" href="logo.ico" />
+		<!--<link rel="stylesheet" type="text/css" media="screen and (min-width:760px) and (max-device-width:1089px)" href="css/car-orderpad.css" />-->
+		<link rel="stylesheet" type="text/css"  href="css/car-order.css" />
+		<script src="js/car.js"></script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="topMid">
+				<span>
+				<a href="login.html">登录</a>|
+				<a href="register.html">注册</a>|
+				<a href="order.html">我的辣一家</a>
+				</span>
+			</div>
+		</div>
+		<header><!--[if IE]>
+			
+		<![endif]-->
+		<div class="logo">
+			<a href="#"></a>
+		</div>
+		<div class="headerTitle">购物车</div>
+		<div class="search">
+			<form>
+				<input type="search" class="ipt-search" placeholder="搜索商品"/>
+				<a href="#" class="btn-search" title="搜索"></a>
+			</form>
+		</div>
+		<div class="clear"></div>
+		</header>
+		<section>
+			<form>
+				<!--<div class="address">
+					<select name="addr">
+						<option value=""></option>
+					</select>
+				</div>-->
+			<div class="th" >
+				<input type="checkbox" class="all" value="all" onclick="clickAll(this.checked)"/>
+				<div class="allchose">全选</div>
+				<div class="message">商品信息</div>
+				<div class="unitCost">单价(元)</div>
+				<div class="number">数量</div>
+				<div class="cost">金额(元)</div>
+				<div class="control">操作</div>
+				<div class="clear"></div>
+			</div>
+			<div class="list">
+				<div class="listDetail" id="list1">
+					<div class="cekbox">
+					    <input type="checkbox" name="checkItem" class="lyjcheckbox" value="chose"/>
+					</div>
+					<div class="detail" >
+						<a href="#" class="img"></a>
+						<div class="msg"><a href="#"><span>美味辣条</span></a></div>
+						<div class="uc" id="uc1">10.00</div>
+						<div class="num"><input class="ipt-num" type="number" min="0" max="1000" value="2"></div>
+						<div class="allcost" >20.00</div>
+						<div class="ctrl">
+							<a href="#">删除</a><br>
+							<a href="#">移入收藏</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="listDetail" id="list2">
+					<div class="cekbox">
+					    <input type="checkbox" name="checkItem" class="lyjcheckbox" value="chose"/>
+					</div>
+					<div class="detail" >
+						<a href="#" class="img"></a>
+						<div class="msg"><a href="#"><span>美味辣条</span></a></div>
+							<div class="uc" id="uc2">10.00</div>
+						<div class="num"><input class="ipt-num" type="number" min="0" max="1000" value="1"></div>
+						<div class="allcost" onload="cost()">10.00</div>
+						<div class="ctrl">
+							<a href="#">删除</a><br>
+							<a href="#">移入收藏</a>
+						</div>
+						<!--<div class="clear"></div>-->
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="listDetail" id="list3">
+					<div class="cekbox">
+					    <input type="checkbox" name="checkItem" class="lyjcheckbox" value="chose"/>
+					</div>
+					<div class="detail" >
+						<a href="#" class="img"></a>
+						<div class="msg"><a href="#"><span>美味辣条</span></a></div>
+							<div class="uc">10.00</div>
+						<div class="num"><input class="ipt-num" type="number" min="0" max="1000" value="1"></div>
+						<div class="allcost" onload="">10.00</div>
+						<div class="ctrl">
+							<a href="#">删除</a><br>
+							<a href="#">移入收藏</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="listDetail" id="list4">
+					<div class="cekbox">
+					    <input type="checkbox" name="checkItem" class="lyjcheckbox" value="chose"/>
+					</div>
+					<div class="detail" >
+						<a href="#" class="img"></a>
+						<div class="msg"><a href="#"><span>美味辣条</span></a></div>
+							<div class="uc">10.00</div>
+						<div class="num"><input class="ipt-num" type="number" min="0" max="1000" value="1"></div>
+						<div class="allcost" onload="">10.00</div>
+						<div class="ctrl">
+							<a href="#">删除</a><br>
+							<a href="#">移入收藏</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="listDetail" id="list5">
+					<div class="cekbox">
+						<input type="checkbox" name="checkItem" class="lyjcheckbox" value="chose"/>
+					</div>
+					<div>
+						<a href="#" class="img"></a>
+						<div class="msg"><a href="#"><span>美味辣条</span></a></div>
+							<div class="uc">10.00</div>
+						<div class="num"><input class="ipt-num" type="number" min="0" max="1000" value="1"></div>
+						<div class="allcost" onload="">10.00</div>
+						<div class="ctrl">
+							<a href="#">删除</a><br>
+							<a href="#">移入收藏</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="final">
+				<input type="checkbox" class="all" value="all" onclick="clickAll(this.checked)"/>
+				<div class="allchose">全选</div>
+				<div class="del">
+					<a href="#">删除选中商品</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="#">清空失效商品</a>
+				</div>
+				<div class="total">
+					共选中<span id="total-thing">0</span>件商品&nbsp;&nbsp;总价：<span id="total-money">10.00</span>
+				</div>
+				<a href="#" class="subm" title="结算">
+					去结算
+				</a>
+				<div class="clear"></div>
+			</div>
+			</form>
+		</section>
+		<footer>
+			<div class="fTop">
+				<div class="fLeft">
+					客服电话<br>400-8888-8888
+				</div>
+				<div class="fMid">
+					<a href="index.html"><img src="img/logo.jpg"></a>
+				</div>
+				<div class="fRight">
+					正品保证<br />假一赔十
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="fBottom">
+				<a href="#">关于我们</a>|
+				<a href="#">帮助中心</a>|
+				<a href="#">售后服务</a>|
+				<a href="#">商务合作</a>|
+				<a href="#">友情链接</a>
+				<br/>"辣"一家版权所有©2007-20xx
+			</div>
+		</footer>
+	</body>
+</html>
